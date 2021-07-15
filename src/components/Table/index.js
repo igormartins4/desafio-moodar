@@ -2,6 +2,11 @@ import './style.scss';
 
 export function Table() {
     return (
-     <h1>Olá</h1>  
+        <div className="container">
+            <table>
+            <h1>Olá</h1>  
+
+            </table>
+        </div>
     )
 }

@@ -1,3 +1,20 @@
+:root {
+  --bg: #f8f8f8;
+  --bg-panel: #ebebeb;
+  //--bg-header: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  --color-text: #29292e;
+
+  //transition: all 0.3s linear;
+}
+
+.dark-mode {
+  --bg: #333333;
+  --bg-panel: #434343;
+  //--bg-header: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  --color-text: #b5b5b5;
+  //transition: all 0.3s linear;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +22,8 @@
 }
 
 body {
-  background: #f8f8f8;
-  color: #29292e;
+  background: var(--bg);
+  color: var(--color-text);
 }
 
 body, input, button, textarea {
@@ -16,4 +33,8 @@ body, input, button, textarea {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 93.75w;
 }
