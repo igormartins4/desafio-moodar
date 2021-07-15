@@ -1,34 +1,66 @@
+:root {
+    --bg-header: #EFF1F1;
+    --color-text: #29292e;
+  
+    //transition: all 0.3s linear;
+}
+
+.dark-mode {
+    --bg-panel: #434343;
+    --color-text: #b5b5b5;
+    
+    //transition: all 0.3s linear;
+  }
+
 .container-tabela {
-    width: #{"min(100vw, 1200px)"};
-    margin: auto;
-    background-color: blueviolet;
+  width: #{"min(90vw, 1200px)"};
+  padding: 2rem;
+  margin: auto;
+  background-color: #ffffff;
+
+  h1 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .data-table {
-    width: 100%;
-    border-spacing: 0 0.5rem;
-    color: var(--color-text);
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: var(--color-text);
 
-    tr {
-        background-color: #fff;
-    }
+  tr {
+    //background-color: rgb(13, 185, 50);
+  }
 
-    .dropdown {
-        background-color: aqua;
-    }
+  .dropdown {
+    background-color: aqua;
+  }
 
+  th {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 1rem 2rem;
 
-    table thead th {
-        background: var(--bg-panel);
-      
-        font-weight: normal;
-        padding: 1rem 2rem;
-      
-        text-align: left;
-      }
-      
-      table tbody td {
-        background: var(--bg-panel);
-        padding: 1rem 2rem;
-      }
+    width: 50px;
+  }
+
+  tbody tr:first-child {
+    background: var(--bg-header);
+
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  td {
+    background: var(--bg-panel);
+    padding: 0.5rem 2rem;
+  }
+
+  tbody tr td + td {
+    text-align: center;
+  }
 }
+
+
