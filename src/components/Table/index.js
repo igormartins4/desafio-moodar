@@ -3,9 +3,6 @@ import './style.scss';
 export function Table() {
     return (
         <div className="container-tabela">
-
-            <h1>Tabela de Permissões</h1>
-
             <table className="data-table">
                 <thead>
                     <tr>
@@ -18,7 +15,7 @@ export function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="todos">
+                    <tr className="item-principal">
                         <td>Todos</td>
                         <td>
                             <input type="checkbox" id="todos-ver-listagem" name="todos-ver-listagem" />
@@ -42,7 +39,7 @@ export function Table() {
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr className="item-principal">
                         <td>Análise</td>
                         <td>
                             <input type="checkbox" id="analise-ver-listagem" name="analise-ver-listagem" />
@@ -114,7 +111,7 @@ export function Table() {
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr className="item-principal">
                         <td>Contas</td>
                         <td>
                             <input type="checkbox" id="contas-ver-listagem" name="contas-ver-listagem" />
@@ -210,7 +207,7 @@ export function Table() {
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr className="item-principal">
                         <td>Customização</td>
                         <td>
                             <input type="checkbox" id="customizacao-ver-listagem" name="customizacao-ver-listagem" />
@@ -330,7 +327,7 @@ export function Table() {
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr className="item-principal">
                         <td>Financeiro</td>
                         <td>
                             <input type="checkbox" id="financeiro-ver-listagem" name="financeiro-ver-listagem" />
@@ -380,10 +377,6 @@ export function Table() {
 
                 </tbody>
             </table>
-
-            <div className="container-button">
-                <button>Cadastrar</button>
-            </div>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import { Table } from "./components/Table/index";
+import { Permissions } from "./pages/Permissions";
 
 function App() {
   return (
-    <Table />  
+    <Permissions />  
   );
 }
 
