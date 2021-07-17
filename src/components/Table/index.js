@@ -21,30 +21,38 @@ export function Table() {
         <tbody>
           <RowTable row="Todos" />
 
-          <RowTable className=".item-principal" row="Análise" />
-          <div className="dropdown">
-            <RowTable row="Análise de contas" />
-            <RowTable row="Análise de transações" />
+          <div className="item-principal">
+            <RowTable row="Análise" />
+            <div className="dropdown">
+              <RowTable row="Análise de contas" />
+              <RowTable row="Análise de transações" />
+            </div>
           </div>
 
-          <RowTable className=".item-principal" row="Contas" />
-          <div className="dropdown">
-            <RowTable row="Cliente" />
-            <RowTable row="Transações" />
-            <RowTable row="Contas digitais" />
+          <div className="item-principal">
+            <RowTable row="Contas" />
+            <div className="dropdown">
+              <RowTable row="Cliente" />
+              <RowTable row="Transações" />
+              <RowTable row="Contas digitais" />
+            </div>
           </div>
 
-          <RowTable className=".item-principal" row="Customização" />
-          <div className="dropdown">
-            <RowTable row="Limites e horários" />
-            <RowTable row="Tarifas" />
-            <RowTable row="Tarifas personalizadas" />
-            <RowTable row="Conta" />
+          <div className="item-principal">
+            <RowTable row="Customização" />
+            <div className="dropdown">
+              <RowTable row="Limites e horários" />
+              <RowTable row="Tarifas" />
+              <RowTable row="Tarifas personalizadas" />
+              <RowTable row="Conta" />
+            </div>
           </div>
 
-          <RowTable className=".item-principal" row="Financeiro" />
-          <div className="dropdown">
-            <RowTable row="Entradas" />
+          <div className="item-principal">
+            <RowTable row="Financeiro" />
+            <div className="dropdown">
+              <RowTable row="Entradas" />
+            </div>
           </div>
         </tbody>
       </table>

@@ -1,7 +1,7 @@
 :root {
   --bg-table: #ffffff;
   --bg-header: #eff1f1;
-  --bg-header-secondary: #F8F8F8;
+  --bg-header-secondary: #f8f8f8;
   --color-text: #29292e;
 
   //transition: all 0.3s linear;
@@ -54,19 +54,27 @@
     width: 352px;
   }
 
-  .item-principal tr {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-  
-    background-color: var(--bg-header-secondary);
+  .item-principal {
+    tr {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+
+      background-color: var(--bg-header-secondary);
+    }
+
+    .container:first-child span {
+      cursor: pointer;
+    }
   }
 
-  .dropdown tr {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    background-color: var(--bg-table);
+  .dropdown {
+    tr {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      background-color: var(--bg-table);
+    }
   }
 }
