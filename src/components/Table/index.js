@@ -19,26 +19,28 @@ export function Table() {
           </tr>
         </thead>
         <tbody>
+          <tr>
           <RowTable row="Todos" />
+          </tr>
 
-          <div className="item-principal">
+          <tr className="item-principal">
             <RowTable row="Análise" />
             <div className="dropdown">
               <RowTable row="Análise de contas" />
               <RowTable row="Análise de transações" />
             </div>
-          </div>
+          </tr>
 
-          <div className="item-principal">
+          <tr className="item-principal">
             <RowTable row="Contas" />
             <div className="dropdown">
               <RowTable row="Cliente" />
               <RowTable row="Transações" />
               <RowTable row="Contas digitais" />
             </div>
-          </div>
+          </tr>
 
-          <div className="item-principal">
+          <tr className="item-principal">
             <RowTable row="Customização" />
             <div className="dropdown">
               <RowTable row="Limites e horários" />
@@ -46,14 +48,14 @@ export function Table() {
               <RowTable row="Tarifas personalizadas" />
               <RowTable row="Conta" />
             </div>
-          </div>
+          </tr>
 
-          <div className="item-principal">
+          <tr className="item-principal">
             <RowTable row="Financeiro" />
             <div className="dropdown">
               <RowTable row="Entradas" />
             </div>
-          </div>
+          </tr>
         </tbody>
       </table>
     </div>
