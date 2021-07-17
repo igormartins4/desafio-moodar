@@ -21,25 +21,31 @@ export function Table() {
         <tbody>
           <RowTable row="Todos" />
 
-          <RowTable row="Análise" />
+          <RowTable className=".item-principal" row="Análise" />
           <div className="dropdown">
             <RowTable row="Análise de contas" />
             <RowTable row="Análise de transações" />
           </div>
 
-          <RowTable row="Contas" />
-          <RowTable row="Cliente" />
-          <RowTable row="Transações" />
-          <RowTable row="Contas digitais" />
+          <RowTable className=".item-principal" row="Contas" />
+          <div className="dropdown">
+            <RowTable row="Cliente" />
+            <RowTable row="Transações" />
+            <RowTable row="Contas digitais" />
+          </div>
 
-          <RowTable row="Customização" />
-          <RowTable row="Limites e horários" />
-          <RowTable row="Tarifas" />
-          <RowTable row="Tarifas personalizadas" />
-          <RowTable row="Conta" />
+          <RowTable className=".item-principal" row="Customização" />
+          <div className="dropdown">
+            <RowTable row="Limites e horários" />
+            <RowTable row="Tarifas" />
+            <RowTable row="Tarifas personalizadas" />
+            <RowTable row="Conta" />
+          </div>
 
-          <RowTable row="Financeiro" />
-          <RowTable row="Entradas" />
+          <RowTable className=".item-principal" row="Financeiro" />
+          <div className="dropdown">
+            <RowTable row="Entradas" />
+          </div>
         </tbody>
       </table>
     </div>

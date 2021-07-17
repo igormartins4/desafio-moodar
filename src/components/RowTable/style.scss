@@ -4,14 +4,6 @@ tbody tr:first-child {
   font-size: 18px;
 }
 
-.item-principal {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-
-  background-color: #f8f8f8;
-}
-
 td {
   padding: 0.5rem 2rem;
 }
@@ -24,25 +16,8 @@ tbody td + td {
 
 .container td {
   width: 150px;
-  //background-color: rgb(9, 13, 226);
 }
 
 .container td:first-child {
   width: 350px;
-  //background-color: rgb(198, 241, 7);
-}
-
-.dropdown tr {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-
-  tr {
-    background-color: #ffffff;
-  }
-
-  tbody td > span {
-    font-size: 16px;
-  }
 }
