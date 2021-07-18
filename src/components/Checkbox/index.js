@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export function Checkbox(props) {
   const [checked, setChecked] = useState(false);
@@ -14,8 +14,11 @@ export function Checkbox(props) {
       checkboxName[0] === "customização" ||
       checkboxName[0] === "financeiro"
     ) {
+
+
       if (checked === false) {
         setChecked(true);
+        console.log(checked);
         return checked === true;
       } else if (checked === true) {
         setChecked(false);
@@ -23,7 +26,6 @@ export function Checkbox(props) {
       }
     }
   }
-  useEffect(() => {}, [checked]);
 
   console.log(checked);
 

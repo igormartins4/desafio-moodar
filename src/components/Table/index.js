@@ -3,6 +3,17 @@ import { RowTable } from "../RowTable";
 import "./style.scss";
 
 export function Table() {
+  const state = {
+    open: true
+  };
+  function handleButtonClick() {
+    this.setState((state) => {
+      return {
+        open: !state.open,
+      };
+    });
+  }
+
   return (
     <div className="container-table">
       <h1>Tabela de Permissões</h1>
@@ -20,14 +31,18 @@ export function Table() {
         </thead>
         <tbody>
           <tr>
-          <RowTable row="Todos" />
+            <RowTable row="Todos" />
           </tr>
 
-          <tr className="item-principal">
+          <tr className="item-principal" onClick={handleButtonClick}>
             <RowTable row="Análise" />
             <div className="dropdown">
-              <RowTable row="Análise de contas" />
-              <RowTable row="Análise de transações" />
+              <div
+                className={state.open ? "dropdown-menu show" : "dropdown-menu"}
+              >
+                <RowTable row="Análise de contas" />
+                <RowTable row="Análise de transações" />
+              </div>
             </div>
           </tr>
 
